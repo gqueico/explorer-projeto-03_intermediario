@@ -109,6 +109,11 @@ form legend {
   background-color: #FAFAFC;
 }
 
+.input-group__name input:invalid,
+.input-group input:invalid {
+  border: 1px solid #FF5374;
+}
+
 .input-group {
   display: flex;
   flex-direction: column;
@@ -148,4 +153,31 @@ form legend {
 
 .mentoring-day-and-hour input {
   width: 140px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  background-color: #535971;
+  border-radius: 0 0 20px 20px;
+}
+
+footer .button {
+  width: 608px;
+  padding: 15px 40px;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFF;
+  border: none;
+  border-radius: 20px;
+  background-color: #FF5374;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+footer .button:hover {
+  filter: brightness(0.9);
 }
