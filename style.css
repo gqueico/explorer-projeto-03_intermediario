@@ -30,7 +30,7 @@ body::before {
 .page {
   max-width: 750px;
   margin: 0 auto;
-  padding-top: 140px;
+  padding: 140px 0 100px;
 }
 
 .page header {
@@ -49,4 +49,103 @@ body::before {
   font-size: 20px;
   font-weight: 400;
   color: #FFF;
+}
+
+form {
+  width: 100%;
+  margin-top: 58px;
+  padding: 64px;
+  border-radius: 20px 20px 0 0;
+  background-color: #FFF;
+}
+
+form fieldset {
+  margin-bottom: 32px;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form legend {
+  width: 100%;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #535971;
+  border-bottom: 1px solid #E6E6F0;
+}
+
+.input-group__name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 22px;
+}
+
+.input-group__name label,
+.input-group label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #4E4958;
+}
+
+.input-group__name input,
+.input-group input {
+  width: 300px;
+  height: 56px;
+  margin-top: 8px;
+  padding-inline: 24px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #535971;
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background-color: #FAFAFC;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.input-group p {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #535971;
+}
+
+.input-group label span {
+  margin-left: 6px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+}
+
+.input-group input {
+  width: 100%;
+  margin-top: 0;
+}
+
+.mentoring-day-and-hour {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mentoring-day-and-hour #mentoring-date{
+  width: 300px;
+  margin-right: 22px;
+}
+
+.mentoring-day-and-hour input {
+  width: 140px;
 }
